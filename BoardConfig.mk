@@ -26,7 +26,8 @@ TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_SMP := true
-TARGET_CPU_VARIANT := cortex-a7
+TARGET_CPU_VARIANT := krait
+TARGET_USE_KINGFISHER_OPTIMIZATION := true
 
 # Board
 BOARD_VENDOR := htc
@@ -50,7 +51,7 @@ BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=qcom user_debug=31 ehci-hcd.park=3
 TARGET_KERNEL_CONFIG := cm_memul_defconfig
-TARGET_KERNEL_SOURCE := kernel/htc/memul
+TARGET_KERNEL_SOURCE := kernel/htc/msm8974
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x02008000 --tags_offset 0x01e00000
 BOARD_CUSTOM_BOOTIMG_MK := device/htc/memul/mkbootimg.mk
