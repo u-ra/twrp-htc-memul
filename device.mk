@@ -23,9 +23,13 @@ PRODUCT_COPY_FILES += \
 # Recovery
 PRODUCT_PACKAGES += \
     chargeled \
+    choice_fn \
+    detect_key \
     init.recovery.qcom.rc \
+    offmode_charging \
     offmode_charging_res_images \
-    offmode_charging_warn_res_images
+    offmode_charging_warn_res_images \
+    power_test
 
 # Set build date
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
