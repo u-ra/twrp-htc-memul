@@ -18,8 +18,14 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Recovery
 PRODUCT_COPY_FILES += \
-      $(LOCAL_PATH)/recovery/init.recovery.qcom.rc:root/init.recovery.qcom.rc \
       $(LOCAL_PATH)/recovery/recovery.fstab:recovery/root/etc/recovery.fstab
+
+# Recovery
+PRODUCT_PACKAGES += \
+    chargeled \
+    init.recovery.qcom.rc \
+    offmode_charging_res_images \
+    offmode_charging_warn_res_images
 
 # Set build date
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
