@@ -26,6 +26,7 @@ PRODUCT_PACKAGES += \
     choice_fn \
     detect_key \
     init.recovery.qcom.rc \
+    lpm.rc \
     offmode_charging \
     offmode_charging_res_images \
     offmode_charging_warn_res_images \
