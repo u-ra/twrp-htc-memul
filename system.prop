@@ -1,5 +1,1 @@
 # system.prop for memul
-
-# Recovery
-ro.cwm.forbid_format=/boot,/devlog,/fataldevlog,/ramdump,/carrier,/custdata,/firmware/radio,/firmware/adsp,/firmware/wcnss
-ro.cwm.forbid_mount=/boot,/devlog,/fataldevlog,/ramdump,/carrier,/custdata,/firmware/radio,/firmware/adsp,/firmware/wcnss
