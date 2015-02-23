@@ -49,7 +49,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 3355443200
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=qcom user_debug=31 ehci-hcd.park=3
+BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=qcom user_debug=31 ehci-hcd.park=3 androidboot.selinux=permissive
 TARGET_KERNEL_CONFIG := cm_memul_defconfig
 TARGET_KERNEL_SOURCE := kernel/htc/msm8974
 BOARD_KERNEL_SEPARATED_DT := true
